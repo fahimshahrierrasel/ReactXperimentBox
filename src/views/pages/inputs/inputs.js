@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./inputs.scss";
 import TextField from "../../components/text-field";
+import GlowButton from "../../components/glow-button";
 
 const Inputs = () => {
   const [name, setName] = useState("");
@@ -26,6 +27,9 @@ const Inputs = () => {
             setEmail(e.target.value);
           }}
         />
+      </div>
+      <div className="form-control">
+        <GlowButton text="Submit" />
       </div>
     </div>
   );
